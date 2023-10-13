@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL</title>
+
+    <script type="text/javascript"
+            src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript">
+        function initViz(){
+            var containerDiv = document.getElementById("vizContainer"),
+                url = "https://public.tableau.com/views/total_16963303018100/4"
+                options ={
+                hideTabs:true,
+                    onFirstInteractive: function (){
+                        console.log("Run this code when the viz has finished Loading.");
+
+                    }
+                };
+            var viz = new tableau.Viz(containerDiv, url, options);
+
+        }
+    </script>
+</head>
+<body onload="initViz();">
+    <div id="VizContainer" style="Width:800px;  height: 700px;"></div>
+
+
+</body>
+</html>
