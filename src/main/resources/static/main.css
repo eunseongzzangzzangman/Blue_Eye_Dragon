@@ -28,12 +28,14 @@
 
 .dropdown {
     width: 250px;
+    background-color: #fcfcfc; /* 원하는 배경색으로 설정 */
+    color: #fff; /* 텍스트 색상 설정 */
 }
 .dropdown-btn {
     width: inherit;
     padding: 10px;
     font-size: 18px;
-    background-color: yellowgreen;
+    background-color: #fcfcfc;
     color: #fff;
     border: none;
     outline: none;
@@ -50,3 +52,11 @@
     padding: 7px;
     text-align: center;
 }
+
+/*네비게이션 바*/
+.nav.flex-column {
+    background-color: #fcfcfc; /* 원하는 배경색으로 설정 */
+    width: 250px; /* 원하는 너비로 설정 */
+}
+
+

@@ -9,19 +9,36 @@
           rel="stylesheet"
           integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
           crossorigin="anonymous">
+<!--    나눔고딕체 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
     <title>Title</title>
 
 </head>
+<style>
+    /* 링크의 기본 색상 설정 */
+    .nav-link {
+        color: #131313;
+    }
+    /*웹 페이지 글꼴 및 배경색 설정*/
+    body {
+        font-family: 'Nanum Gothic', sans-serif;
+        background-color: #f3f3f3;
+    }
+</style>
 <body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
+
+
 <!--수직 네이게이션 바-->
 <ul class="nav flex-column">
     <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">ProjectTitle</a>
+        <a class="nav-link active" aria-current="page" href="#">ProjectTitle</a>
     </li>
     <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#">Active</a>
