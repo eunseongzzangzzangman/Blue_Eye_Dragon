@@ -26,37 +26,56 @@
 /*    cursor: pointer; !* 클릭 가능한 커서 설정 *!*/
 /*}*/
 
-.dropdown {
-    width: 250px;
-    background-color: #fcfcfc; /* 원하는 배경색으로 설정 */
-    color: #fff; /* 텍스트 색상 설정 */
-}
-.dropdown-btn {
-    width: inherit;
-    padding: 10px;
-    font-size: 18px;
-    background-color: #fcfcfc;
-    color: #fff;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
+/*.dropdown {*/
+/*    width: 250px;*/
+/*    background-color: #fcfcfc; !* 원하는 배경색으로 설정 *!*/
+/*    color: #fff; !* 텍스트 색상 설정 *!*/
+/*}*/
+/*.dropdown-btn {*/
+/*    width: inherit;*/
+/*    padding: 10px;*/
+/*    font-size: 18px;*/
+/*    background-color: #fcfcfc;*/
+/*    color: #fff;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    cursor: pointer;*/
+/*}*/
 
-.dropdown-submenu {
-    display: none;
-    width: inherit;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
-}
-.dropdown-submenu a {
-    display: block;
-    padding: 7px;
-    text-align: center;
-}
+/*.dropdown-submenu {*/
+/*    display: none;*/
+/*    width: inherit;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);*/
+/*}*/
+/*.dropdown-submenu a {*/
+/*    display: block;*/
+/*    padding: 7px;*/
+/*    text-align: center;*/
+/*}*/
 
 /*네비게이션 바*/
 .nav.flex-column {
     background-color: #fcfcfc; /* 원하는 배경색으로 설정 */
     width: 250px; /* 원하는 너비로 설정 */
 }
+
+.accordion{
+    width: 250px;
+    align-content: center;
+
+}
+
+.accordion-body {
+    align-content: center;
+}
+
+/*.accordion-menu {*/
+/*    text-align: center;*/
+/*    display: block;*/
+/*    margin: 0 auto;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*}*/
+
 
 
