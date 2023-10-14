@@ -67,6 +67,9 @@
 .accordion-body {
     align-content: center;
 }
+body {
+    display: flex;
+}
 
 
 /*.accordion-menu {*/

@@ -3,13 +3,13 @@ body {
     display: flex;
 }
 
-ul{
-    background-color: #FFDAB9;
-    width: 150px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+/*ul{*/
+/*    background-color: #FFDAB9;*/
+/*    width: 150px;*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
 li a {
     display: block;
     color: #000000;
@@ -24,7 +24,7 @@ li a:hover{
 .dashboard-container {
     width: 800px;
     height: 700px;
-    margin-left: 500px;
+    margin-left: 300px;
 }
 iframe {
     width: 100%;
