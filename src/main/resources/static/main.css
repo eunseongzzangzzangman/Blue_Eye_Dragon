@@ -1,81 +1,29 @@
-/*.leftmenu {*/
-/*    position: fixed; !* 고정 위치로 설정 *!*/
-/*    top: 0; !* 상단에 붙임 *!*/
-/*    left: 0; !* 왼쪽에 붙임 *!*/
-/*    width: 200px; !* 원하는 너비로 설정 *!*/
-/*    height: 100%; !* 창 높이에 맞게 설정 *!*/
-/*    background-color: #333;*/
-/*    color: #fff;*/
-/*    padding: 20px; !* 원하는 여백 설정 *!*/
-/*}*/
-
-/*.leftmenu ul {*/
-/*    list-style: none;*/
-/*    padding: 0;*/
-/*    position: relative;*/
-/*    top: -20px;*/
-/*}*/
-
-/*.leftmenu ul li {*/
-/*    padding: 10px;*/
-/*}*/
-
-/*.leftmenu ul li a {*/
-/*    color: #fff;*/
-/*    text-decoration: none;*/
-/*    cursor: pointer; !* 클릭 가능한 커서 설정 *!*/
-/*}*/
-
-/*.dropdown {*/
-/*    width: 250px;*/
-/*    background-color: #fcfcfc; !* 원하는 배경색으로 설정 *!*/
-/*    color: #fff; !* 텍스트 색상 설정 *!*/
-/*}*/
-/*.dropdown-btn {*/
-/*    width: inherit;*/
-/*    padding: 10px;*/
-/*    font-size: 18px;*/
-/*    background-color: #fcfcfc;*/
-/*    color: #fff;*/
-/*    border: none;*/
-/*    outline: none;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.dropdown-submenu {*/
-/*    display: none;*/
-/*    width: inherit;*/
-/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);*/
-/*}*/
-/*.dropdown-submenu a {*/
-/*    display: block;*/
-/*    padding: 7px;*/
-/*    text-align: center;*/
-/*}*/
-
 /*네비게이션 바*/
-.nav.flex-column {
-    background-color: #fcfcfc; /* 원하는 배경색으로 설정 */
-    width: 250px; /* 원하는 너비로 설정 */
+#accordionFlushExample {
+    background-color: #fcfcfc;
+    width: 250px;
+    height: 100vh;
+}
+
+.nav-item {
+    padding-left: 20px;
 }
 
 .accordion{
     width: 250px;
     align-content: center;
-
+    background-color: #fcfcfc;
 }
 
 .accordion-body {
     align-content: center;
+    margin-bottom: 20px; /* 아코디언 아래에 여백 추가 */
 }
 
-/*.accordion-menu {*/
-/*    text-align: center;*/
-/*    display: block;*/
-/*    margin: 0 auto;*/
-/*    border: none;*/
-/*    outline: none;*/
-/*}*/
+
+
+
+
 
 
 
