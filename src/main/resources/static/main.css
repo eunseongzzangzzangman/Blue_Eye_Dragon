@@ -15,10 +15,7 @@
 .accordion{
     width: 250px;
     align-content: center;
-<<<<<<<<< Temporary merge branch 1
     background-color: #fcfcfc;
-=========
->>>>>>>>> Temporary merge branch 2
 }
 
 .accordion-body {
@@ -44,9 +41,10 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* 그림자 스타일 및 색상 설정 */
     background-color: #fcfcfc;
     position: absolute; /* 절대 위치 지정 */
-    top: 10px; /* 위쪽 여백 */
+    top: 20px; /* 위쪽 여백 */
     right: 0px; /* 우측 여백 */
     bottom: -8px;
-    left: 310px;
+    left: 280px;
 }
+
 
