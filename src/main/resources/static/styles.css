@@ -22,9 +22,10 @@ li a:hover{
     color: white;
 }
 .dashboard-container {
-    width: 800px;
+    width: 80%;
     height: 700px;
-    margin-left: 300px;
+    align-content: center;
+
 }
 iframe {
     width: 100%;
