@@ -1,7 +1,7 @@
 /*네비게이션 바*/
 #accordionFlushExample {
     background-color: #fcfcfc;
-    width: 250px;
+    width: 300px;
     height: 100vh;
 }
 
@@ -17,7 +17,15 @@
 
 .accordion-body {
     align-content: center;
-    margin-bottom: 20px; /* 아코디언 아래에 여백 추가 */
+    margin-bottom: 10px; /* 아코디언 아래에 여백 추가 */
+}
+
+.margin-top-change {
+    margin-top : 10px;
+}
+
+.margin-zero {
+    margin-bottom: 0px;
 }
 
 .accordion-content {
