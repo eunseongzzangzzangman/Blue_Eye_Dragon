@@ -20,6 +20,11 @@
     margin-bottom: 20px; /* 아코디언 아래에 여백 추가 */
 }
 
+.accordion-content {
+    margin-left: 10px;
+}
+
+
 
 
 
