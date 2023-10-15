@@ -11,6 +11,12 @@ public class PageController {
         return "main";
     }
 
+    @GetMapping("/url_code(경찰관수대비).html")
+    public String tester(){
+        System.out.println("Asdfasdfasdf");
+        return "url_code(경찰관수대비)";
+    }
+
     @GetMapping("/main2")
     public String showMainPage2(){
         return "main2";
