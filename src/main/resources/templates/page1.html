@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="ko"
-      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>네비게이션 바 예제</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <h1>page1 입니다.</h1>
+    <div>
+        <h2>스마트 안전 :범죄</h2>
+
+        <ul>
+            <li><a href="javascript:void(0);" onclick="loadPage('1')">Accordion Item #1</a></li>
+            <li><a href="javascript:void(0);" onclick="loadPage('about')">소개</a></li>
+            <li><a href="javascript:void(0);" onclick="loadPage('contact')">연락</a></li>
+        </ul>
+    </div>
+    <div id="page-container">
+    <!-- 페이지 내용이 여기에 동적으로 로드됩니다. -->
+    </div>
+<script>
+    function loadPage(pageName) {
+        let url;
+        if (pageName === '1') {
+            url = 'url_code(퇴근시간유입인구).html';
+        } else if (pageName === 'about') {
+            url = 'about.html';
+        } else if (pageName === 'contact') {
+            url = 'contact.html';
+        }
+
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('page-container').innerHTML = data;
+
+            });
+    }
+</script>
 </body>
 </html>

@@ -11,6 +11,11 @@ public class PageController {
         return "main";
     }
 
+    @GetMapping("/main2")
+    public String showMainPage2(){
+        return "main2";
+    }
+
     @GetMapping("/page1")
     public String showPage1(){
         return "page1";
