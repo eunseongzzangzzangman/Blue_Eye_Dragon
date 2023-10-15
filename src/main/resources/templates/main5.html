@@ -61,12 +61,11 @@
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body margin-top-change"><a href="javascript:void(0);" onclick="loadPage('1')">경찰관수대비</a></div>
-                    <div class="accordion-body"><a href="javascript:void(0);" onclick="loadPage('2')">메인대시보드</a></div>
-                    <div class="accordion-body"><a href="javascript:void(0);" onclick="loadPage('3')">유동인구필터링</a></div>
-                    <div class="accordion-body"><a href="javascript:void(0);" onclick="loadPage('4')">인프라수</a></div>
-                    <div class="accordion-body"><a href="javascript:void(0);" onclick="loadPage('5')">주점업장수</a></div>
-                    <div class="accordion-body margin-zero" ><a href="javascript:void(0);" onclick="loadPage('6')">퇴근시간유입인구</a></div>
+                    <div class="accordion-body margin-top-change"><a href="javascript:void(0);" onclick="loadPage('5')">주점업장수</a></div>
+                    <div class="accordion-body"><a href="javascript:void(0);" onclick="loadPage('3')">인프라수</a></div>
+                    <div class="accordion-body"><a href="javascript:void(0);" onclick="loadPage('4')">유동인구필터링</a></div>
+                    <div class="accordion-body"><a href="javascript:void(0);" onclick="loadPage('6')">퇴근시간유입인구</a></div>
+                    <div class="accordion-body margin-zero" ><a href="javascript:void(0);" onclick="loadPage('1')">경찰관수대비</a></div>
                 </div>
             </div>
             <div class="accordion-item">
@@ -123,8 +122,9 @@
     </nav>
 
     <div id="page-container">
-        <iframe frameborder='0' scrolling="no" class="dashboard-container"
-                src=" https://public.tableau.com/views/total_16963303018100/sheet39?:language=ko-KR&publish=yes&:display_count=n&:origin=viz_share_link?:showVizHome=no?:embed=true"></iframe>
+        <iframe frameborder='0' scrolling="no" class="dashboard-container margin_left_zero"
+                style="width:1450px"
+                src="https://public.tableau.com/views/total_16963303018100/sheet39?:language=ko-KR&publish=yes&:display_count=n&:origin=viz_share_link?:showVizHome=no?:embed=true"></iframe>
         <!-- 페이지 내용이 여기에 동적으로 로드됩니다. -->
     </div>
 </div>
@@ -136,9 +136,9 @@
             url = 'url_code(경찰관수대비).html';
         } else if (pageName === '2') {
             url = 'url_code(메인대시보드).html';
-        } else if (pageName === '3') {
+        } else if (pageName === '4') {
             url = 'url_code(유동인구필터링).html';
-        }else if (pageName === '4') {
+        }else if (pageName === '3') {
             url = 'url_code(인프라수).html';
         } else if (pageName === '5') {
             url = 'url_code(주점업장수).html';
