@@ -26,6 +26,18 @@
         font-family: 'Nanum Gothic', sans-serif;
         background-color: #f3f3f3;
     }
+    /* 링크 스타일 제거 */
+    a {
+        text-decoration: none; /* 밑줄 제거 */
+        color: inherit; /* 링크의 기본 색상으로 설정 (부모 요소의 색상 상속) */
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    /* 아코디언 섹션 간의 경계선 제거 */
+    .accordion-item {
+        border: none; /* 경계선 제거 */
+    }
 </style>
 <body>
 
@@ -33,81 +45,78 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
-
-
-<!--수직 네이게이션 바-->
-<ul class="nav flex-column">
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">ProjectTitle</a>
-    </li>
-<!--    <li class="nav-item">-->
-<!--        <a class="nav-link active" aria-current="page" href="#">Active</a>-->
-<!--    </li>-->
-<!--    <li class="nav-item">-->
-<!--        <a class="nav-link" href="#">Link</a>-->
-<!--    </li>-->
-<!--    <li class="nav-item">-->
-<!--        <a class="nav-link" href="#">Link</a>-->
-<!--    </li>-->
-</ul>
-
-<!--&lt;!&ndash;드롭다운&ndash;&gt;-->
-<!--<div class="dropdown">-->
-<!--    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="flush-collapseOne">-->
-<!--        Dropdown-->
-<!--    </button>-->
-<!--    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">-->
-<!--        <li><button class="dropdown-item" type="button">Action</button></li>-->
-<!--        <li><button class="dropdown-item" type="button">test</button></li>-->
-<!--        <li><button class="dropdown-item" type="button">test</button></li>-->
-<!--    </ul>-->
-<!--    <div class="dropdown">-->
-<!--        <button class="btn dropdown-toggle" type="button" id="dropdownMenu3" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--            Dropdown-->
-<!--        </button>-->
-<!--        <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">-->
-<!--            <li><button class="dropdown-item" type="button">Action</button></li>-->
-<!--            <li><button class="dropdown-item" type="button">test</button></li>-->
-<!--            <li><button class="dropdown-item" type="button">test</button></li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--</div>-->
-
-<div class="accordion accordion-flush" id="accordionFlushExample">
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Accordion Item #1
-            </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Section</div>
+<nav class="navbar navbar-vertical">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="nav-item">
+            <a class="nav-link title" aria-current="page" href="#">ProjectTitle</a>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <img src="image/graph_icon.PNG" alt="Image Description" style="width: 10%; height: 10%;">
+                    <div class="accordion-content">Accordion Item #1</div>
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <a href="page1.html">Section 1</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <img src="image/graph_icon.PNG" alt="Image Description" style="width: 10%; height: 10%;">
+                        <div class="accordion-content">Accordion Item #2</div>
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <a href="page1.html">Section 2</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <img src="image/graph_icon.PNG" alt="Image Description" style="width: 10%; height: 10%;">
+                        <div class="accordion-content">Accordion Item #3</div>
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <a href="page1.html">Section 3</a>
+                    </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                    <img src="image/graph_icon.PNG" alt="Image Description" style="width: 10%; height: 10%;">
+                        <div class="accordion-content">Accordion Item #4</div>
+                </button>
+            </h2>
+            <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <a href="page1.html">Section 4</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+                    <img src="image/graph_icon.PNG" alt="Image Description" style="width: 10%; height: 10%;">
+                        <div class="accordion-content">Accordion Item #5</div>
+                </button>
+            </h2>
+            <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <a href="page1.html">Section 5</a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Accordion Item #2
-            </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Section</div>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Accordion Item #3
-            </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-
-                <div class="accordion-body">Section</div>
-        </div>
-    </div>
-</div>
-
-
+</nav>
 
 </body>
 </html>
