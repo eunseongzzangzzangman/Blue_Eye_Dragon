@@ -1,8 +1,11 @@
 /*네비게이션 바*/
 #accordionFlushExample {
     background-color: #fcfcfc;
-    width: 250px;
+    width: 300px;
     height: 100vh;
+    border-top-right-radius: 20px; /* 우측 상단 모서리 둥글게 */
+    border-bottom-right-radius: 20px; /* 우측 하단 모서리 둥글게 */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* 그림자 스타일 및 색상 설정 */
 }
 
 .nav-item {
@@ -12,18 +15,38 @@
 .accordion{
     width: 250px;
     align-content: center;
+<<<<<<<<< Temporary merge branch 1
     background-color: #fcfcfc;
+=========
+>>>>>>>>> Temporary merge branch 2
 }
 
 .accordion-body {
     align-content: center;
-    margin-bottom: 20px; /* 아코디언 아래에 여백 추가 */
+    margin-bottom: 10px; /* 아코디언 아래에 여백 추가 */
 }
 
+.margin-top-change {
+    margin-top : 10px;
+}
 
+.margin-zero {
+    margin-bottom: 0px;
+}
 
+.accordion-content {
+    margin-left: 10px;
+}
 
-
-
-
+#page-container {
+    border-radius: 20px; /* 모서리 둥글게 설정 */
+    overflow: hidden; /* 네비게이션 바와 일치하는 둥글 모양을 유지하기 위해 오버플로우를 숨깁니다. */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* 그림자 스타일 및 색상 설정 */
+    background-color: #fcfcfc;
+    position: absolute; /* 절대 위치 지정 */
+    top: 10px; /* 위쪽 여백 */
+    right: 0px; /* 우측 여백 */
+    bottom: -8px;
+    left: 310px;
+}
 
