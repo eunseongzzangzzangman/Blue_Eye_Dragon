@@ -2,10 +2,12 @@
 #accordionFlushExample {
     background-color: #fcfcfc;
     width: 300px;
-    height: 100vh;
+    height: 95vh;
     border-top-right-radius: 20px; /* 우측 상단 모서리 둥글게 */
     border-bottom-right-radius: 20px; /* 우측 하단 모서리 둥글게 */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* 그림자 스타일 및 색상 설정 */
+    position: fixed; /* 네비게이션 바를 화면에 고정 */
+    top: 20px; /* 화면 상단에 고정 */
 }
 
 .nav-item {
@@ -35,6 +37,7 @@
     margin-left: 10px;
 }
 
+/*대시보드*/
 #page-container {
     border-radius: 20px; /* 모서리 둥글게 설정 */
     overflow: hidden; /* 네비게이션 바와 일치하는 둥글 모양을 유지하기 위해 오버플로우를 숨깁니다. */
@@ -42,9 +45,31 @@
     background-color: #fcfcfc;
     position: absolute; /* 절대 위치 지정 */
     top: 20px; /* 위쪽 여백 */
-    right: 0px; /* 우측 여백 */
+    right: 10px; /* 우측 여백 */
     bottom: -8px;
-    left: 280px;
+    left: 310px;
+    width: 80%;
+    height: 95vh;
+    /*display: flex; !* 내용을 가로로 정렬하기 위해 flex 컨테이너로 설정 *!*/
+    justify-content: center; /* 수평 가운데 정렬을 수행 */
+    margin: 0 auto; /* 컨테이너를 수평 가운데 정렬하기 위해 margin을 조정 */
 }
 
+/*메인대시보드*/
+.title-view {
+    font-size: 20px;
+    background-color: #d5d5d5;
+    height: 80px;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px; /* 왼쪽 여백 추가 */
+    line-height: 80px; /* 세로 가운데 정렬 */
+}
 
+/*메인대시보드 아이콘*/
+#dashboard-icon {
+    /*width: 20px;*/
+    height: 20px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
